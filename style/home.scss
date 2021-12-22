@@ -1,0 +1,115 @@
+@import "./common.scss";
+
+// 內文 + 側邊圖
+.grey-bg {
+  position: absolute;
+  right: 0;
+  // z-index: 1;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+
+  section.left {
+    flex: 3 1 500px;
+    padding: 5rem 8rem;
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.5rem;
+      color: $themeColor;
+    }
+  }
+  section.right {
+    flex: 1 1 600px;
+    position: relative;
+    img {
+      border-radius: 50%;
+      width: 16vw;
+      height: 20vw;
+      position: absolute;
+      top: 40vh;
+      right: 20vw;
+      transform: translateY(-50%);
+      z-index: 3;
+    }
+    .box1 {
+      position: absolute;
+      width: 300px;
+      height: 60px;
+      background-color: #0b9890;
+      top: 65vh;
+      right: 20vw;
+      transform: translateY(-50%);
+      z-index: 3;
+      p {
+        color: $backgroundColor;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 10px;
+        z-index: 3;
+      }
+    }
+    .box2 {
+      position: absolute;
+      width: 300px;
+      height: 60px;
+      background-color: rgb(11, 153, 145);
+      opacity: 0.4;
+      top: 68vh;
+      right: 18vw;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+  }
+}
+
+// 首頁RWD調整
+@media screen and (max-width: 1100px) {
+  .grey-bg {
+    opacity: 0.3;
+  }
+  header {
+    nav {
+      position: relative;
+      z-index: 6;
+      ul {
+        width: 100%;
+        flex-direction: column;
+        li {
+          padding: 1rem 0rem;
+          border-bottom: 2px solid $themeColor;
+        }
+      }
+    }
+  }
+  main {
+    section.right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem;
+      img {
+        position: static;
+        transform: none;
+        width: 30vw;
+        height: 35vw;
+      }
+      .box1 {
+        position: static;
+        transform: none;
+      }
+      .box2 {
+        position: static;
+        transform: none;
+        margin-top: -40px;
+        margin-left: 20px;
+      }
+    }
+  }
+  footer {
+    text-align: center;
+  }
+}

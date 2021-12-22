@@ -1,0 +1,105 @@
+@import "./common.scss";
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  section.form {
+    flex: 1 1 600px;
+    .row {
+      padding: 20px 200px;
+    }
+    form {
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 30px auto;
+      div {
+        label {
+          font-size: 1.5rem;
+        }
+        input,
+        textarea {
+          background-color: $backgroundColor;
+          font-size: 1.25rem;
+          padding: 0.5rem 0.25rem;
+          border: none;
+          border-radius: 7px;
+        }
+      }
+      .submit {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 100px;
+      }
+      .btn {
+        width: 100px;
+        font-size: 20px;
+        color: black;
+        background-color: rgba(11, 152, 145, 0.295);
+        &:hover {
+          background-color: rgb(11, 152, 145);
+          color: white;
+        }
+      }
+    }
+  }
+  div.line {
+    background-color: gray;
+    width: 3px;
+  }
+  section.contact {
+    flex: 1 1 500px;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    position: relative;
+    div.content {
+      h2 {
+        margin: 2.5rem 0rem;
+      }
+    }
+    .backEgg {
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}
+
+.footForContact {
+  //   padding: 0 7rem;
+  margin: 0 80px;
+  img {
+    width: 80px;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main {
+    section.form {
+      form {
+        .submit {
+          margin: 10px auto;
+        }
+        .row {
+          padding: 0;
+          input {
+            width: 300px;
+          }
+        }
+      }
+    }
+    section.contact {
+      justify-content: center;
+      margin-top: 40px;
+    }
+  }
+  .footForContact {
+    text-align: center;
+    img {
+      //   padding: 20px;
+      margin: 15px;
+    }
+  }
+}

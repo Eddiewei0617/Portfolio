@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+header nav {
+  width: 100%;
+  position: relative;
+}
+
+header nav ul {
+  padding: 2rem;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 1.5rem;
+}
+
+header nav ul li a {
+  color: #adadad;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.active {
+  color: black;
+}
+
+.footForHome {
+  padding: 0 7rem;
+}
+
+.footForHome a {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+  header nav ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li {
+    padding: 1rem 0rem;
+    border-bottom: 2px solid #878787;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+main section.form .row {
+  padding: 20px 200px;
+}
+
+main section.form form {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px auto;
+}
+
+main section.form form div label {
+  font-size: 1.5rem;
+}
+
+main section.form form div input,
+main section.form form div textarea {
+  background-color: #e5e5e5;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.25rem;
+  border: none;
+  border-radius: 7px;
+}
+
+main section.form form .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 100px;
+}
+
+main section.form form .btn {
+  width: 100px;
+  font-size: 20px;
+  color: black;
+  background-color: rgba(11, 152, 145, 0.295);
+}
+
+main section.form form .btn:hover {
+  background-color: #0b9891;
+  color: white;
+}
+
+main div.line {
+  background-color: gray;
+  width: 3px;
+}
+
+main section.contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px;
+  position: relative;
+}
+
+main section.contact div.content h2 {
+  margin: 2.5rem 0rem;
+}
+
+main section.contact .backEgg {
+  position: absolute;
+  z-index: -1;
+}
+
+.footForContact {
+  margin: 0 80px;
+}
+
+.footForContact img {
+  width: 80px;
+  margin: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+  main section.form form .submit {
+    margin: 10px auto;
+  }
+  main section.form form .row {
+    padding: 0;
+  }
+  main section.form form .row input {
+    width: 300px;
+  }
+  main section.contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px;
+  }
+  .footForContact {
+    text-align: center;
+  }
+  .footForContact img {
+    margin: 15px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

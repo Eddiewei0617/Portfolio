@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+header nav {
+  width: 100%;
+  position: relative;
+}
+
+header nav ul {
+  padding: 2rem;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 1.5rem;
+}
+
+header nav ul li a {
+  color: #adadad;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.active {
+  color: black;
+}
+
+.footForHome {
+  padding: 0 7rem;
+}
+
+.footForHome a {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+  header nav ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li {
+    padding: 1rem 0rem;
+    border-bottom: 2px solid #878787;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.table {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 4rem;
+  margin-top: 80px;
+}
+
+main section.table table tr {
+  border-bottom: 3px solid #878787;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+main section.table table tr td {
+  padding: 1rem 5rem;
+  font-size: 24px;
+}
+
+main section.table table tr:hover {
+  background-color: #e5e5e5;
+}
+
+main section.picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  position: relative;
+}
+
+main section.picture .mePic {
+  width: 500px;
+  height: 750px;
+  margin: 50px;
+}
+
+main section.picture .mePic img {
+  width: 100%;
+  height: 100%;
+}
+
+main section.picture div.greyRect {
+  width: 500px;
+  height: 750px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: -1;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main a {
+  cursor: pointer;
+}
+
+.footForResume {
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 750px;
+}
+
+@media screen and (max-width: 1100px) {
+  section.picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footForResume {
+    width: 100%;
+    text-align: center;
+    position: static;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=resume.css.map */

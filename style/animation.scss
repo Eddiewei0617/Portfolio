@@ -1,0 +1,112 @@
+@import "./common.scss";
+
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: $themeColor;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+// stroke-dasharray: 框線的間隔距離
+// stroke-dasharray = '10, 5' 表示：虛線長10，間距5，然後重複 虛線長10，間距5
+// stroke-dashoffset： offset：偏移的意思
+// stroke-dashoffset是相對於起始點的偏移，正數偏移x值的時候，相當於往左移動了x個長度單位，負數偏移x的時候，相當於往右移動了x個長度單位
+#first {
+  stroke-dasharray: 476px;
+  stroke-dashoffset: 476px;
+  animation: fadeInside 0.6s ease-in forwards;
+}
+#second {
+  stroke-dasharray: 427px;
+  stroke-dashoffset: 427px;
+  animation: fadeInside 0.6s ease-in forwards 0.3s;
+  // 最後的0.3s 是只要延遲多久再開始此動畫
+}
+#third {
+  stroke-dasharray: 427px;
+  stroke-dashoffset: 427px;
+  animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+#forth {
+  stroke-dasharray: 233px;
+  stroke-dashoffset: 233px;
+  animation: fadeInside 0.6s ease-in forwards 0.9s;
+}
+#fifth {
+  stroke-dasharray: 379px;
+  stroke-dashoffset: 379px;
+  animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+#sixth {
+  stroke-dasharray: 658px;
+  stroke-dashoffset: 658px;
+  animation: fadeInside 0.6s ease-in forwards 1.5s;
+}
+#seventh {
+  stroke-dasharray: 379px;
+  stroke-dashoffset: 379px;
+  animation: fadeInside 0.6s ease-in forwards 1.8s;
+}
+#eighth {
+  stroke-dasharray: 233px;
+  stroke-dashoffset: 233px;
+  animation: fadeInside 0.6s ease-in forwards 2.1s;
+}
+#ninth {
+  stroke-dasharray: 1158px;
+  stroke-dashoffset: 1158px;
+  animation: fadeInside 0.6s ease-in forwards;
+}
+#tenth {
+  stroke-dasharray: 1728px;
+  stroke-dashoffset: 1728px;
+  animation: fadeInside 0.6s ease-in forwards 0.4s;
+}
+#eleventh {
+  stroke-dasharray: 1165px;
+  stroke-dashoffset: 1165px;
+  animation: fadeInside 0.6s ease-in forwards 0.8s;
+}
+#twelveth {
+  stroke-dasharray: 1382px;
+  stroke-dashoffset: 1382px;
+  animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+#thirteenth {
+  stroke-dasharray: 602px;
+  stroke-dashoffset: 602px;
+  animation: fadeInside 0.6s ease-in forwards 1.6s;
+}
+#fourteenth {
+  stroke-dasharray: 1274px;
+  stroke-dashoffset: 1274px;
+  animation: fadeInside 0.6s ease-in forwards 2s;
+}
+#fifteenth {
+  stroke-dasharray: 1203px;
+  stroke-dashoffset: 1203px;
+  animation: fadeInside 0.6s ease-in forwards 2.4s;
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+svg {
+  animation: fill 1s ease-in forwards 2.4s;
+}
